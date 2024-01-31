@@ -7,7 +7,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow-y: hidden;
 }
 
 .music-container {
@@ -56,10 +55,33 @@ body {
 
 #button-container .button:hover {
     color: #fff;
+    transition: 0.3s ease;
 }
 
 #cover {
-    width: 200px;
+    width: 250px;
+}
+
+.timebox {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+}
+/* Adicione estilos para o input range */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance:none;
+    width: 100%;
+    height: 10px;
+    background: #ccc; /* Cor de fundo padrão */
+    outline: none;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+
+input[type="range"]:hover::-webkit-slider-thumb {
+    background: #0b79d3; /* Altera a cor do thumb no hover */
 }
 
 
